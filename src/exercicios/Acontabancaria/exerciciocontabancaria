@@ -1,0 +1,15 @@
+Implemente:
+•	Classe ContaBancaria
+o	atributos privados: numero, titular, saldo
+o	métodos:
+	depositar(valor)
+	sacar(valor)
+	transferir(destino, valor)
+	getSaldo()
+📚 Conhecimentos necessários:
+•	Encapsulamento
+•	Modificadores de acesso
+•	Métodos
+•	Validação de regra de negócio
+•	this
+•	Construtores

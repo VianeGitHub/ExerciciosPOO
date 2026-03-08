@@ -1,0 +1,15 @@
+🧩 Exercício 2 — Sistema de Estacionamento
+Classes:
+Veiculo
+Vaga
+Estacionamento
+Regras:
+•	estacionamento tem vagas
+•	vaga pode estar ocupada
+•	registrar entrada
+•	registrar saída
+•	calcular valor por hora
+Treina:
+✔ relacionamento
+✔ controle de estado
+✔ regras
