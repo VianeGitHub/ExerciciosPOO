@@ -1,4 +1,4 @@
-package exercicios.Dsistemadeestacionamento.dominio;
+package exercicios.Dsistemadeestacionamento.correcao.dominio;
 
 public class Veiculo {
 
