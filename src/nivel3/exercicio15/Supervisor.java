@@ -6,7 +6,10 @@ public class Supervisor extends Funcionario implements Relatorio {
 
     @Override
     public void gerarRelatorio() {
-
+        System.out.println("Nome: " + getNome());
+        System.out.println("Cargo " + getCargo());
+        System.out.println("Salário: " + getSalario());
+        System.out.println("Quantidade de funcionários: " + getQuantidadeFuncionariosSupervisionados());
     }
 
     // Getters e Setters

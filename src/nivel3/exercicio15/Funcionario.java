@@ -5,9 +5,16 @@ public class Funcionario {
     private String nome;
     private String cargo;
     private double salario;
+    private boolean trabalhando;
 
-    public void trabalhar() {
-        System.out.println("O funcionário " + getNome() + " iniciou o trabalho");
+    public boolean trabalhar(boolean trabalhando) {
+        this.trabalhando = trabalhando;
+        if(trabalhando == true) {
+            System.out.println("O funcionário " + getNome() + " iniciou o trabalho");
+            return true;
+        }
+        System.out.println("O funcionário " + getNome() + " não iniciou o trabalho");
+        return false;
     }
 
     // Getters e Setters
