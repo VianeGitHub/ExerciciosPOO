@@ -45,8 +45,39 @@ public class MainFuncionario {
                     motorista.trabalhar(false);
                 }
 
+            } else {
+                System.out.println("Digite o nome: ");
+                String nome = sc.next();
+                supervisor.setNome(nome);
+
+                System.out.println("Digite o cargo: ");
+                String cargo = sc.next();
+                supervisor.setCargo(cargo);
+
+                System.out.println("Digite o salário: ");
+                double salario = sc.nextDouble();
+                supervisor.setSalario(salario);
+
+                System.out.println("Digite a quantidade de motorista(s) supervisionado(s): ");
+                int quantidadeFuncionariosSupervisionados = sc.nextInt();
+                supervisor.setQuantidadeFuncionariosSupervisionados(quantidadeFuncionariosSupervisionados);
+
+                System.out.println("Está trabalhando? S / N" );
+                String trabalhar = sc.next();
+                if(trabalhar.equals("S") && trabalhar.equalsIgnoreCase(trabalhar)) {
+                    motorista.gerarRelatorio();
+                    motorista.trabalhar(true);
+                } else {
+                    motorista.gerarRelatorio();
+                    motorista.trabalhar(false);
+                }
             }
 
+            System.out.println("Deseja informar novamente? 1 - Sim / 2 - Não");
+            opcao = sc.nextInt();
+
         } while(opcao == 1);
+
+        System.out.println("Programa encerrado");
     }
 }
