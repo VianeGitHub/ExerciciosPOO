@@ -65,11 +65,11 @@ public class MainFuncionario {
                 System.out.println("Está trabalhando? S / N" );
                 String trabalhar = sc.next();
                 if(trabalhar.equals("S") && trabalhar.equalsIgnoreCase(trabalhar)) {
-                    motorista.gerarRelatorio();
-                    motorista.trabalhar(true);
+                    supervisor.gerarRelatorio();
+                    supervisor.trabalhar(true);
                 } else {
-                    motorista.gerarRelatorio();
-                    motorista.trabalhar(false);
+                    supervisor.gerarRelatorio();
+                    supervisor.trabalhar(false);
                 }
             }
 
